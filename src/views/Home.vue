@@ -23,6 +23,7 @@
     </div>
     <div class="movie">
       <img src="../assets/ladybird.png" alt="" />
+      <h3>LADY BIRD</h3>
       <p>
         Lady Bird is a 2017 American coming-of-age comedy-drama film written and
         directed by Greta Gerwig in her solo directorial debut. Set between 2002
@@ -31,7 +32,9 @@
         members and friends.
       </p>
       <div id="trailer">
-        <button>Watch trailer</button>
+        <a href="https://www.youtube.com/watch?v=cNi_HC839Wo"
+          ><button>Watch trailer</button></a
+        >
       </div>
     </div>
     <div class="movie">
@@ -44,7 +47,9 @@
         annihilate the present.
       </p>
       <div id="trailer">
-        <button>Watch trailer</button>
+        <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"
+          ><button>Watch trailer</button></a
+        >
       </div>
     </div>
     <div class="movie">
@@ -56,21 +61,23 @@
         Rainbow by Peter Quilter.
       </p>
       <div id="trailer">
-        <button>Watch trailer</button>
+        <a href="https://www.youtube.com/watch?v=98t7aXRaA6w"
+          ><button>Watch trailer</button></a
+        >
       </div>
     </div>
     <div class="movie">
       <img src="../assets/wonderwoman.png" alt="" />
-      <div id="text">
-        <p>
-          In Wonder Woman, the Amazon princess Diana sets out to stop World War
-          I, believing the conflict was started by the longtime enemy of the
-          Amazons, Ares, after American pilot and spy Steve Trevor crash-lands
-          on their island Themyscira and informs her about it.
-        </p>
-      </div>
+      <p>
+        In Wonder Woman, the Amazon princess Diana sets out to stop World War I,
+        believing the conflict was started by the longtime enemy of the Amazons,
+        Ares, after American pilot and spy Steve Trevor crash-lands on their
+        island Themyscira and informs her about it.
+      </p>
       <div id="trailer">
-        <button>Watch trailer</button>
+        <a href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"
+          ><button>Watch trailer</button></a
+        >
       </div>
     </div>
   </section>
@@ -133,12 +140,12 @@ export default {
 
 .mini-nav > button {
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.26);
   font-size: 1.7vw;
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 0;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .mini-nav > button > h5 {
@@ -161,23 +168,26 @@ export default {
   padding: 2vw;
 }
 
+.movie > h3 {
+  position: absolute;
+  top: 0.9vw;
+  left: 30vw;
+}
+
 .movie > img {
-  width: 22vw;
-  height: 22vh;
+  width: 25vw;
+  height: 28vh;
 }
 
 .movie > p {
-  padding-top: 2vw;
-  padding-left: 0.8vw;
+  width: 100%;
+  padding-top: 2.2vw;
+  padding-left: 1.2vw;
   padding-right: 15vw;
   padding-bottom: 2vh;
+  margin: 0;
 }
 
-#text{
-  display: flex;
-  
-
-}
 #trailer {
   display: flex;
   flex-direction: column;
@@ -185,10 +195,10 @@ export default {
   padding: 0;
 }
 
-#trailer > button {
+#trailer > a > button {
   position: absolute;
-  bottom: 2vh;
-  right: 27vw;
+  bottom: 4vh;
+  right: 22vw;
   color: white;
   background-color: rgb(253, 76, 76);
   border: none;
