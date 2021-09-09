@@ -1,7 +1,15 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">HOME</router-link> |
+    <router-link to="/about">COMING SOON</router-link>|
+    <router-link to="/about">SIGN UP</router-link>|
+    <router-link to="/about">GIFT CARDS</router-link>|
+    <router-link to="/about">ABOUT</router-link>
+
+    <!-- <div>
+      <img src="./assets/breal.jpg" alt="">
+    </div>
+    -->
   </div>
   <router-view />
 </template>
@@ -16,15 +24,25 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 5%;
+  background-color: rgb(253, 76, 76);
+  
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 0.3vw;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #050505;
+  font-weight: bold;
 }
+
+/*div > img {
+  width: 10%;
+}
+*/
 </style>
