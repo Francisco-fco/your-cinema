@@ -4,7 +4,7 @@
     <div id="routes">
       <router-link to="/">HOME</router-link> |
       <router-link to="/about">COMING SOON</router-link>|
-      <router-link to="/about">SIGN UP</router-link>|
+      <router-link to="/sign-up">SIGN UP</router-link>|
       <router-link to="/about">GIFT CARDS</router-link>|
       <router-link to="/about">ABOUT</router-link>
     </div>

@@ -1,11 +1,17 @@
 <template>
   <div class="hello">
-    <h1>{{ title }}</h1>
-    <h5>{{ text }}</h5>
+    <div id="title">
+      <h1>{{ title }}</h1>
+    </div>
+    <div id="text">
+      <h5>{{ text }}</h5>
+    </div>
     <div class="button-desc">
-      <button style="background-color: rgba(0, 0, 0, 0.644)">
-        <h5>Watch now!</h5>
-      </button>
+      <div id="trailer-nav">
+        <a href="https://www.youtube.com/watch?v=ELeMaP8EPAA&t=42s"
+          ><button>Watch trailer</button></a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -27,9 +33,19 @@ export default {
   padding: 0.1vw;
 }
 
-h3 {
-  margin: 40px 0 0;
+#trailer-nav {
+  display: flex;
+  position: relative;
 }
+
+#trailer-nav > a > button {
+  width: 10vw;
+  height: 4vh;
+  position: absolute;
+  bottom: 5.6vh;
+  left: 70vw;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -42,11 +58,5 @@ li {
 .button-desc {
   margin: 0;
   padding: 0;
-}
-
-.button-desc > button > h5 {
-  color: white;
-  padding: 0.2vw;
-  margin: 0;
 }
 </style>

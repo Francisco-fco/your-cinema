@@ -141,7 +141,7 @@ export default {
 .mini-nav > button {
   color: white;
   background-color: rgba(0, 0, 0, 0.26);
-  font-size: 1.7vw;
+  font-size: 1.2vw;
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 0;
